@@ -1,0 +1,68 @@
+:root {
+  color-scheme: light;
+  --ink: #172331;
+  --muted: #3d4a59;
+  --night: #142132;
+  --paper: #fff;
+  --wash: #f1f4f8;
+  --yellow: #ffd45c;
+  --edge: #dbe1e9;
+  --width: 70rem;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+}
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.65; }
+a { color: #234d80; text-underline-offset: .2em; }
+a:focus-visible { outline: 3px solid #2769ae; outline-offset: 4px; }
+img { display: block; width: 100%; height: auto; }
+p, ul, ol { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+h1, h2, h3 { line-height: 1.15; letter-spacing: -.025em; margin: 0 0 .65em; }
+h1 { font-size: clamp(2.15rem, 5.6vw, 3.75rem); }
+h2 { font-size: clamp(1.6rem, 3.55vw, 2.35rem); }
+h3 { font-size: 1.3rem; }
+.skip { position: absolute; top: -5rem; left: 1rem; background: white; padding: .75rem; z-index: 3; }
+.skip:focus { top: .5rem; }
+.top, .nav { max-width: var(--width); margin: auto; padding-inline: clamp(1rem, 4vw, 2rem); }
+.site-header { background: var(--paper); border-bottom: 1px solid var(--edge); }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1.05rem; }
+.brand { color: var(--ink); text-decoration: none; font-size: clamp(1rem, 2vw, 1.35rem); font-weight: 800; display: flex; align-items: center; gap: .65rem; }
+.brand-icon { background: var(--yellow); border-radius: .6rem; width: 2.25rem; height: 2.25rem; display: grid; place-items: center; font-weight: 900; font-size: 1.55rem; flex: none; }
+.nav { display: flex; flex-wrap: wrap; gap: .2rem clamp(.35rem, 1.7vw, 1.3rem); padding-bottom: .65rem; }
+.nav a { color: var(--muted); font-size: .92rem; font-weight: 650; padding: .45rem .2rem; text-decoration: none; }
+.nav a:hover, .nav a[aria-current] { color: var(--ink); box-shadow: inset 0 -3px #ca8b13; }
+.panel { padding: clamp(2.2rem, 5vw, 4.4rem) clamp(1rem, 4vw, 2rem); }
+.panel > .panel-content { max-width: var(--width); margin: auto; min-width: 0; }
+.panel-content > div > div + div { margin-top: .75rem; }
+.panel.shaded { background: var(--wash); }
+.panel.hero, .panel.dark { background: var(--night); color: #fff; }
+.panel.hero { padding-block: clamp(2.9rem, 7vw, 6rem); }
+.panel.hero p { max-width: 59ch; margin-inline: auto; font-size: clamp(1rem, 2vw, 1.2rem); }
+.panel.hero > .panel-content { text-align: center; max-width: 54rem; }
+.panel.accent:not(.hero) { background: #fff4d4; }
+.panel.narrow > .panel-content { max-width: 52rem; }
+.panel.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(1.4rem, 4vw, 3.7rem); align-items: center; max-width: calc(var(--width) + 4rem); margin-inline: auto; }
+.panel.split.image-right > .panel-media { order: 2; }
+.panel-media img { aspect-ratio: 4 / 3; object-fit: cover; border-radius: .85rem; }
+.columns { display: flex; flex-wrap: wrap; gap: 1.3rem; margin-top: 1.45rem; }
+.column { flex: 1 1 14.5rem; min-width: 0; border: 1px solid var(--edge); border-radius: .85rem; padding: 1.1rem; background: var(--paper); color: var(--ink); }
+.column > div + div { margin-top: .85rem; }
+.column img { aspect-ratio: 4 / 3; object-fit: cover; border-radius: .5rem; }
+.quote-mark::before { content: "“"; display: block; height: .8em; font-size: 3rem; color: #76520c; font-family: Georgia, serif; }
+.button { display: inline-flex; justify-content: center; align-items: center; padding: .6rem .95rem; min-height: 2.75rem; border-radius: .48rem; background: var(--yellow); color: #201800; font-weight: 750; text-decoration: none; line-height: 1.35; }
+.button:hover { background: #ffcb3f; }
+.button.secondary { background: var(--paper); border: 1px solid var(--edge); color: var(--ink); }
+.header-phone { white-space: nowrap; }
+.center { text-align: center; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+.site-footer { text-align: center; background: var(--night); color: #e9edf2; padding: 1.6rem 1rem; font-size: .9rem; }
+.site-footer a, .hero a:not(.button), .dark a:not(.button) { color: inherit; }
+@media (max-width: 42rem) {
+  .panel.split { grid-template-columns: 1fr; }
+  .panel.split.image-right > .panel-media { order: 0; }
+  .top { align-items: flex-start; }
+  .header-phone { padding-inline: .55rem; font-size: .81rem; }
+  .nav a { font-size: .84rem; }
+}
