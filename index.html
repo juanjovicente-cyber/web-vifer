@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Electricista en Bilbao y Barakaldo | Instalaciones Eléctricas Vifer</title>
+<meta name="description" content="Electricista en Bilbao y Barakaldo. Instalaciones, reparación de averías y mantenimiento eléctrico para viviendas, comunidades y negocios. Llámanos al 680 729 177.">
+<link rel="canonical" href="https://www.instalacioneselectricasvifer.es/">
+<meta property="og:title" content="Electricista en Bilbao y Barakaldo | Instalaciones Eléctricas Vifer">
+<meta property="og:description" content="Instalaciones, reparación de averías y mantenimiento eléctrico. Llama a Juanjo al 680 729 177.">
+<meta property="og:url" content="https://www.instalacioneselectricasvifer.es/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "Instalaciones Eléctricas Vifer",
+  "url": "https://www.instalacioneselectricasvifer.es/",
+  "telephone": "+34680729177",
+  "email": "juanjosevifer@hotmail.com",
+  "areaServed": ["Bilbao", "Barakaldo", "Bizkaia"],
+  "address": { "@type": "PostalAddress", "addressLocality": "Bilbao", "addressRegion": "Bizkaia", "addressCountry": "ES" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+  ]
+}
+</script>
+<style>
+  :root {
+    color-scheme: light;
+    --fondo: #eef1f2;
+    --papel: #ffffff;
+    --tinta: #1c2430;
+    --gris: #5b6672;
+    --linea: #cfd5d9;
+    --amarillo: #f2c230;
+    /* Colores de los cables según la norma: fases, neutro y tierra */
+    --marron: #7a4a2a;
+    --negro: #1a1a1a;
+    --gris-cable: #8d9399;
+    --azul: #2f5da8;
+    --verde: #3d9a46;
+    --ancho: 68rem;
+    --condensada: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --texto: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--tinta);
+    font-family: var(--texto);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--azul); outline-offset: 3px; }
+  .contenedor { max-width: var(--ancho); margin: 0 auto; padding: 0 1.25rem; }
+
+  /* La firma de la web: los cinco cables */
+  .cables {
+    height: 10px;
+    background: linear-gradient(to bottom,
+      var(--marron) 0 2px, transparent 2px 2px,
+      var(--negro) 2px 4px,
+      var(--gris-cable) 4px 6px,
+      var(--azul) 6px 8px,
+      var(--verde) 8px 10px);
+  }
+  .cables-tierra {
+    height: 10px;
+    background:
+      repeating-linear-gradient(90deg, var(--verde) 0 18px, var(--amarillo) 18px 36px) bottom / 100% 2px no-repeat,
+      linear-gradient(to bottom, var(--marron) 0 2px, var(--negro) 2px 4px, var(--gris-cable) 4px 6px, var(--azul) 6px 8px, transparent 8px);
+  }
+
+  /* Cabecera */
+  header.arriba { background: var(--papel); border-bottom: 1px solid var(--linea); }
+  .barra { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-top: .9rem; padding-bottom: .9rem; }
+  .marca { font-family: var(--condensada); font-weight: 700; font-size: 1.35rem; line-height: 1.1; text-decoration: none; }
+  .marca span { display: block; font-family: var(--texto); font-weight: 500; font-size: .85rem; color: var(--gris); }
+  nav.menu { display: flex; gap: 1.5rem; font-weight: 500; }
+  nav.menu a { text-decoration: none; }
+  nav.menu a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .boton {
+    display: inline-flex; align-items: center; gap: .5rem;
+    background: var(--amarillo); color: var(--tinta);
+    font-weight: 600; text-decoration: none;
+    padding: .7rem 1.1rem; border-radius: 4px;
+    border: 2px solid var(--tinta);
+  }
+  .boton:hover { background: #ffd34d; }
+  .boton.secundario { background: var(--papel); }
+  .boton.secundario:hover { background: var(--fondo); }
+
+  /* Portada */
+  .portada { background: var(--papel); padding: 3.5rem 0 3rem; }
+  .portada h1 {
+    font-family: var(--condensada); font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3.1rem); line-height: 1.05;
+    margin: 0 0 1rem; max-width: 20ch;
+  }
+  .portada p.intro { max-width: 46ch; color: var(--gris); font-size: 1.15rem; margin: 0 0 2rem; }
+  .telefono-grande {
+    display: inline-block;
+    font-family: var(--condensada); font-weight: 800;
+    font-size: clamp(3.4rem, 14vw, 8.5rem); line-height: .9;
+    letter-spacing: -.01em;
+    text-decoration: none;
+    padding-bottom: .9rem;
+    position: relative;
+  }
+  .telefono-grande::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 10px;
+    background: linear-gradient(to bottom, var(--marron) 0 2px, var(--negro) 2px 4px, var(--gris-cable) 4px 6px, var(--azul) 6px 8px, var(--verde) 8px 10px);
+  }
+  .telefono-grande:hover { color: var(--azul); }
+  .acciones { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+
+  /* Secciones */
+  section { padding: 4rem 0; }
+  h2 { font-family: var(--condensada); font-weight: 700; font-size: clamp(1.8rem, 3.5vw, 2.4rem); line-height: 1.1; margin: 0 0 .5rem; }
+  .subtitulo { color: var(--gris); margin: 0 0 2.25rem; max-width: 55ch; }
+
+  /* Servicios como un esquema de circuitos */
+  .servicios { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--tinta); }
+  .servicios li {
+    display: grid; grid-template-columns: 1.25rem 1fr; gap: 0 1.25rem;
+    padding: 1.5rem 0; border-bottom: 1px solid var(--linea);
+  }
+  .servicios .borne {
+    width: 14px; height: 14px; margin-top: .45rem;
+    border: 3px solid var(--tinta); border-radius: 50%; background: var(--papel);
+  }
+  .servicios h3 { font-family: var(--condensada); font-weight: 700; font-size: 1.45rem; margin: 0 0 .25rem; }
+  .servicios p { margin: 0; max-width: 60ch; color: var(--gris); }
+  .servicios .que { margin-top: .5rem; color: var(--tinta); font-size: .95rem; }
+
+  /* Sobre mí */
+  .sobre { background: var(--papel); }
+  .dos-columnas { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: start; }
+  .sobre p { max-width: 58ch; }
+  .dato { border-left: 4px solid var(--amarillo); padding: .25rem 0 .25rem 1rem; margin-bottom: 1.5rem; }
+  .dato strong { display: block; font-family: var(--condensada); font-size: 2.6rem; line-height: 1; }
+  .dato span { color: var(--gris); }
+
+  /* Contacto */
+  .contacto { background: var(--tinta); color: #f3f5f6; }
+  .contacto .subtitulo { color: #b8c1c9; }
+  .contacto .telefono-grande { color: #fff; }
+  .contacto .telefono-grande:hover { color: var(--amarillo); }
+  .contacto a:focus-visible { outline-color: var(--amarillo); }
+  .tabla-horario { border-collapse: collapse; width: 100%; max-width: 26rem; }
+  .tabla-horario td { padding: .55rem 0; border-bottom: 1px solid #3a4553; }
+  .tabla-horario td:last-child { text-align: right; }
+  .contacto h3 { font-family: var(--condensada); font-size: 1.4rem; margin: 0 0 .75rem; }
+  .contacto .boton.secundario { background: transparent; color: #fff; border-color: #fff; }
+  .contacto .boton.secundario:hover { background: #2a3443; }
+  .correo { word-break: break-all; }
+
+  footer { background: var(--tinta); color: #b8c1c9; font-size: .9rem; padding: 1.5rem 0 6rem; border-top: 1px solid #3a4553; }
+
+  /* Botón fijo de llamada en el móvil */
+  .llamar-movil {
+    display: none;
+    position: fixed; left: .75rem; right: .75rem; bottom: .75rem; z-index: 20;
+    justify-content: center; font-size: 1.1rem; padding: .9rem;
+    box-shadow: 0 4px 14px rgba(28,36,48,.25);
+  }
+
+  @media (max-width: 760px) {
+    nav.menu { display: none; }
+    .barra .boton { display: none; }
+    .dos-columnas { grid-template-columns: 1fr; gap: 2rem; }
+    .portada { padding-top: 2.5rem; }
+    .llamar-movil { display: flex; }
+    section { padding: 3rem 0; }
+  }
+  @media (min-width: 761px) { footer { padding-bottom: 1.5rem; } }
+</style>
+</head>
+<body>
+
+<div class="cables" aria-hidden="true"></div>
+<header class="arriba">
+  <div class="contenedor barra">
+    <a class="marca" href="#inicio">Instalaciones Eléctricas Vifer<span>Juanjo · Bilbao y Barakaldo</span></a>
+    <nav class="menu" aria-label="Menú principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="boton" href="tel:+34680729177">Llamar a Juanjo</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="portada">
+    <div class="contenedor">
+      <h1>Soy Juanjo, tu electricista en Bilbao y Barakaldo</h1>
+      <p class="intro">Más de 25 años arreglando averías y haciendo instalaciones eléctricas en viviendas, comunidades, negocios y naves. Llámame y cuéntame qué necesitas.</p>
+      <a class="telefono-grande" href="tel:+34680729177" aria-label="Llamar al 680 729 177">680 729 177</a>
+      <div class="acciones">
+        <a class="boton" href="tel:+34680729177">Llamar ahora</a>
+        <a class="boton secundario" href="https://wa.me/34680729177" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="servicios">
+    <div class="contenedor">
+      <h2>Qué hago</h2>
+      <p class="subtitulo">Atención directa, explicaciones claras y un presupuesto adaptado a cada trabajo.</p>
+      <ul class="servicios">
+        <li>
+          <span class="borne" aria-hidden="true"></span>
+          <div>
+            <h3>Averías y reparaciones en casa</h3>
+            <p>Localizo y reparo fallos en enchufes, iluminación y cuadros eléctricos. Si salta el diferencial o se ha ido la luz en una parte de la casa, llámame y lo vemos.</p>
+          </div>
+        </li>
+        <li>
+          <span class="borne" aria-hidden="true"></span>
+          <div>
+            <h3>Instalaciones eléctricas</h3>
+            <p>Instalaciones nuevas, reformas y ampliaciones en viviendas, comunidades y locales, adaptadas a lo que necesita cada espacio.</p>
+          </div>
+        </li>
+        <li>
+          <span class="borne" aria-hidden="true"></span>
+          <div>
+            <h3>Naves industriales y negocios</h3>
+            <p>Instalación y mantenimiento eléctrico para naves, talleres y comercios.</p>
+          </div>
+        </li>
+        <li>
+          <span class="borne" aria-hidden="true"></span>
+          <div>
+            <h3>Iluminación LED y ahorro</h3>
+            <p>Cambio a iluminación LED y mejoras para gastar menos luz en tu casa o negocio. Revisamos juntos qué solución encaja con tu instalación.</p>
+          </div>
+        </li>
+        <li>
+          <span class="borne" aria-hidden="true"></span>
+          <div>
+            <h3>Reparación de electrodomésticos</h3>
+            <p>Lavadoras, hornos y otros electrodomésticos. Cuéntame qué le pasa y te digo si merece la pena repararlo.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="sobre">
+    <div class="contenedor dos-columnas">
+      <div>
+        <h2>Un electricista de aquí</h2>
+        <p>Trabajo en Bilbao, Barakaldo y alrededores. Cuando me llamas hablas directamente conmigo: te escucho, te explico qué pasa con palabras claras y te digo qué solución tiene antes de empezar.</p>
+        <p>Llevo más de 25 años en el oficio, con trabajos que van desde una avería pequeña en casa hasta la instalación de una nave.</p>
+      </div>
+      <div>
+        <div class="dato"><strong>+25 años</strong><span>de experiencia</span></div>
+        <div class="dato"><strong>Bizkaia</strong><span>Bilbao, Barakaldo y alrededores</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="contenedor">
+      <h2>Habla directamente con Juanjo</h2>
+      <p class="subtitulo">La forma más rápida es llamar. Si estoy trabajando, escríbeme por WhatsApp y te contesto en cuanto pueda.</p>
+      <a class="telefono-grande" href="tel:+34680729177" aria-label="Llamar al 680 729 177">680 729 177</a>
+      <div class="dos-columnas" style="margin-top:2.5rem">
+        <div>
+          <h3>Otras formas de contacto</h3>
+          <div class="acciones" style="margin-top:0">
+            <a class="boton" href="https://wa.me/34680729177" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="boton secundario" href="mailto:juanjosevifer@hotmail.com">Enviar un correo</a>
+          </div>
+          <p class="correo">juanjosevifer@hotmail.com</p>
+        </div>
+        <div>
+          <h3>Horario</h3>
+          <table class="tabla-horario">
+            <tr><td>Lunes a viernes</td><td>9:00–18:00</td></tr>
+            <tr><td>Sábado</td><td>9:00–14:00</td></tr>
+            <tr><td>Domingo</td><td>Cerrado</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="contenedor">© <span id="anio">2026</span> Instalaciones Eléctricas Vifer · Bilbao, Bizkaia</div>
+</footer>
+
+<a class="boton llamar-movil" href="tel:+34680729177">Llamar al 680 729 177</a>
+
+<script>
+  document.getElementById("anio").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
